@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OpenNebula Mobile Manager</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_listar_mvs">Listar MVs</string>
+    <string name="title_activity_criar_mv">Criar MV</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_info_mv">Detalhes da MV</string>
+    <string name="title_activity_criar_novo_usuario">Criar Novo Usuário</string>
+</resources>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.coalman.opennebulamobilemanager.activities.InfoMV"
+    tools:showIn="@layout/activity_info_mv">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ID"
+            android:id="@+id/textView9"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="id"
+            android:id="@+id/id"
+            android:paddingLeft="10dp"
+            android:paddingBottom="6dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Status"
+            android:id="@+id/textView10"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="status"
+            android:id="@+id/status"
+            android:paddingLeft="10dp"
+            android:paddingBottom="6dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="IP"
+            android:id="@+id/textView11"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ip"
+            android:id="@+id/ip"
+            android:paddingLeft="10dp"
+            android:paddingBottom="6dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Memória"
+            android:id="@+id/textView12"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="memória"
+            android:id="@+id/memoria"
+            android:paddingLeft="10dp"
+            android:paddingBottom="6dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="VCPU"
+            android:id="@+id/textView13"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="vcpu"
+            android:id="@+id/vcpu"
+            android:paddingLeft="10dp"
+            android:paddingBottom="6dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="MAC"
+            android:id="@+id/textView14"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="mac"
+            android:id="@+id/mac"
+            android:paddingLeft="10dp"
+            android:paddingBottom="6dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Disco"
+            android:id="@+id/textView15"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="disco"
+            android:id="@+id/disco"
+            android:paddingLeft="10dp"
+            android:paddingBottom="6dp"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <at.markushi.ui.CircleButton
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:src="@drawable/ic_pause_white_24dp"
+            app:cb_color="@color/colorButton"
+            app:cb_pressedRingWidth="8dip"
+            android:id="@+id/buttonSuspender"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="suspenderMV"/>
+
+        <at.markushi.ui.CircleButton
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:src="@drawable/ic_play_white_24dp"
+            app:cb_color="@color/colorButton"
+            app:cb_pressedRingWidth="8dip"
+            android:id="@+id/buttonResumir1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="resumirMV"/>
+
+        <at.markushi.ui.CircleButton
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:src="@drawable/ic_stop_white_24dp"
+        app:cb_color="@color/colorButton"
+        app:cb_pressedRingWidth="8dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonParar"
+        android:onClick="pararMV"/>
+
+        <at.markushi.ui.CircleButton
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:src="@drawable/ic_play_white_24dp"
+            app:cb_color="@color/colorButton"
+            app:cb_pressedRingWidth="8dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonResumir2"
+            android:onClick="resumirMV"/>
+
+        <at.markushi.ui.CircleButton
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:src="@drawable/ic_replay_white_24dp"
+            app:cb_color="@color/colorButton"
+            app:cb_pressedRingWidth="8dip"
+            android:id="@+id/buttonReiniciar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="reiniciarMV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Suspender"
+            android:id="@+id/legendaButton1"
+            android:layout_below="@+id/buttonSuspender"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Parar "
+            android:id="@+id/legendaButton2"
+            android:layout_alignTop="@+id/legendaButton1"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Reiniciar"
+            android:id="@+id/legendaButton3"
+            android:layout_below="@+id/buttonReiniciar"
+            android:layout_alignLeft="@+id/buttonReiniciar"
+            android:layout_alignStart="@+id/buttonReiniciar" />
+
+    </RelativeLayout>
+
+</LinearLayout>

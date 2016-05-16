@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.coalman.opennebulamobilemanager">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ListarMVs"
+            android:label="@string/title_activity_listar_mvs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.CriarMV"
+            android:label="@string/title_activity_criar_mv"
+            android:theme="@style/AppDialogTheme" />
+        <activity
+            android:name=".activities.InfoMV"
+            android:label="@string/title_activity_info_mv"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.CriarNovoUsuario"
+            android:label="@string/title_activity_criar_novo_usuario"
+            android:theme="@style/AppDialogTheme" />
+
+        <service
+            android:name=".service.Servico"
+            android:exported="false" />
+
+        <receiver
+            android:name=".helper.BroadcastMvs"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

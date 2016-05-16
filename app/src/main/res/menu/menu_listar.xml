@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.ListarMVs">
+    <item
+        android:id="@+id/atualizar"
+        android:icon="@drawable/ic_sync"
+        android:title="atualizar"
+        app:showAsAction="always" />
+</menu>

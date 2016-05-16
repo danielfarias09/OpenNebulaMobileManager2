@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="br.com.coalman.opennebulamobilemanager.activities.InfoMV">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_info_mv" />
+
+    <!--<com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="bottom|end"
+        fab:menu_fab_size="normal"
+        fab:menu_showShadow="true"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_colorNormal="#FF4081"
+        fab:menu_colorPressed="#FF69B4"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:menu_backgroundColor="@android:color/transparent">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/removerMV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_grey600_24dp"
+            android:onClick="removerMV"
+            fab:fab_size="mini"
+            fab:fab_label="Remover MV"
+            fab:fab_colorNormal="#FF4081"
+            fab:fab_colorPressed="#FF69B4"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/pararMV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_stop_grey600_24dp"
+            android:onClick="pararMV"
+            fab:fab_size="mini"
+            fab:fab_label="Parar MV"
+            fab:fab_colorNormal="#FF4081"
+            fab:fab_colorPressed="#FF69B4"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/reiniciarMV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_replay_grey600_24dp"
+            android:onClick="reiniciarMV"
+            fab:fab_size="mini"
+            fab:fab_label="Reiniciar MV"
+            fab:fab_colorNormal="#FF4081"
+            fab:fab_colorPressed="#FF69B4"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/resumirMV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play_grey600_24dp"
+            android:onClick="resumirMV"
+            fab:fab_size="mini"
+            fab:fab_label="Resumir MV"
+            fab:fab_colorNormal="#FF4081"
+            fab:fab_colorPressed="#FF69B4"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/suspenderMV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pause_grey600_24dp"
+            android:onClick="suspenderMV"
+            fab:fab_size="mini"
+            fab:fab_label="Suspender MV"
+            fab:fab_colorNormal="#FF4081"
+            fab:fab_colorPressed="#FF69B4"/>
+    </com.github.clans.fab.FloatingActionMenu> -->
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
